@@ -19,11 +19,12 @@ curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.
 ./gemini.sh "请详细分析这个视频的内容" "https://www.youtube.com/watch?v=your-video-id"
 ```
 
-### 首次运行
-1. 脚本会提示你输入 Gemini API Key
-2. 访问 [Google AI Studio](https://aistudio.google.com/u/1/apikey) 创建 API Key
-3. 输入 API Key 后，脚本会自动保存到你的 shell 配置文件
-4. 按提示重新加载配置即可使用
+### 首次设置
+1. **安装时设置**: 使用一键安装命令时会提示输入 API Key
+2. **或运行时设置**: 首次运行脚本时会提示输入 API Key
+3. 访问 [Google AI Studio](https://aistudio.google.com/u/1/apikey) 创建 API Key
+4. 输入后会自动保存，按提示运行 `source` 命令（仅需一次）
+5. 之后可直接使用 `gemini.sh` 命令
 
 ## 输出文件
 
@@ -52,10 +53,6 @@ or
 ```bash
 curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/gemini.sh | bash
 ```
-
-
-
-
 
 ---
 
