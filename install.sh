@@ -120,8 +120,7 @@ echo ""
 echo "安装完成!"
 echo ""
 echo "使用方法:"
-echo "  $SCRIPT_NAME                    # 使用默认提示"
-echo "  $SCRIPT_NAME \"用中文输出这个视频的文字脚本，无需时间戳\" \"https://www.youtube.com/watch?v=9hE5-98ZeCg\"   # 自定义提示"
+echo "  $SCRIPT_NAME \"用中文输出这个视频的文字脚本，无需时间戳\" \"https://www.youtube.com/watch?v=9hE5-98ZeCg\" "
 echo ""
 
 # Show next steps
