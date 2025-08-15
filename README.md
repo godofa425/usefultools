@@ -2,13 +2,13 @@
 
 一个简单易用的 Gemini API 调用脚本，支持视频内容分析和文本生成。
 
-## 🚀 一键安装
+## 一键安装
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.sh | bash
 ```
 
-## 📖 使用方法
+## 使用方法
 
 ### 基本使用
 ```bash
@@ -25,35 +25,39 @@ curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.
 3. 输入 API Key 后，脚本会自动保存到你的 shell 配置文件
 4. 按提示重新加载配置即可使用
 
-## 📁 输出文件
+## 输出文件
 
 脚本会自动生成两个文件：
 - `gemini_response_YYYYMMDD_HHMMSS.txt` - 完整的 API 响应
 - `gemini_text_YYYYMMDD_HHMMSS.txt` - 提取的生成内容
 
-## 🔧 系统要求
+## 系统要求
 
 - macOS 或 Linux
 - curl 命令
 - 互联网连接
 
-## 🆘 获取帮助
+## 获取帮助
 
 ```bash
 ./gemini.sh --help
 ```
 
-## 🔗 直接运行（无需安装）
+or 
+
+如果你在使用过程中遇到问题或有任何建议，欢迎联系我：
+
+**X**: [CallMeYC](https://x.com/SGodofa425)
+
+## 直接运行（无需安装）
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/gemini.sh | bash
 ```
 
-## 📞 联系方式
 
-如果你在使用过程中遇到问题或有任何建议，欢迎联系我：
 
-**X (Twitter)**: [@SGodofa425](https://x.com/SGodofa425)
+
 
 ---
 
