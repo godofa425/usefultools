@@ -34,8 +34,6 @@ curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.
 ## 系统要求
 
 - macOS 或 Linux
-- curl 命令
-- 互联网连接
 
 ## 获取帮助
 
