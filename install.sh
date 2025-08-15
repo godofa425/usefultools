@@ -64,18 +64,19 @@ echo ""
 
 # Check if API key already exists
 if [ -z "$GEMINI_API_KEY" ]; then
-    # Try to read from /dev/tty for pipe execution, fallback to normal read
-    if [ -w /dev/tty ]; then
-        printf "请输入您的 Gemini API Key (留空跳过): "
-        read -s api_key </dev/tty
-        echo ""
+    # Always try to read from /dev/tty first
+    if [ -t 0 ] || [ -e /dev/tty ]; then
+        echo -n "请输入您的 Gemini API Key (留空跳过): "
+        if read -s api_key </dev/tty 2>/dev/null; then
+            echo ""
+        else
+            # Fallback to normal read
+            read -s api_key
+            echo ""
+        fi
     else
         echo "无法在当前环境中交互输入 API Key"
-        echo "请稍后运行 gemini.sh 时手动设置，或使用以下命令："
-        echo ""
-        echo "  # 下载后交互式安装"
-        echo "  curl -O https://raw.githubusercontent.com/godofa425/usefultools/main/install.sh"
-        echo "  chmod +x install.sh && ./install.sh"
+        echo "请稍后运行 gemini.sh 时手动设置"
         echo ""
         api_key=""
     fi

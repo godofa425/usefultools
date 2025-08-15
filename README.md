@@ -6,7 +6,7 @@
 
 ### 方式1: 一键安装（推荐）
 ```bash
-curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.sh | bash
+bash <(curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.sh)
 ```
 
 ### 方式2: 交互式安装（支持API key设置）
