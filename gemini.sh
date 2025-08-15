@@ -43,11 +43,19 @@ check_api_key() {
         fi
         
         echo ""
-        echo "设置完成! 请运行以下命令:"
-        echo "  $source_cmd"
+        echo "==============================================="
+        echo "           API Key 设置完成!"
+        echo "==============================================="
         echo ""
-        echo "注意: 上述命令只需执行一次，之后可以直接运行 gemini.sh"
-        echo "重新运行: ./gemini.sh 或 gemini.sh (如果在PATH中)"
+        echo "首次使用前，请先运行以下命令:"
+        echo ""
+        echo "    $source_cmd"
+        echo ""
+        echo "注意: 上述命令只需执行一次！"
+        echo ""
+        echo "==============================================="
+        echo "然后就可以重新运行:"
+        echo "  ./gemini.sh 或 gemini.sh (如果在PATH中)"
         echo ""
         exit 0
     else

@@ -117,22 +117,28 @@ else
 fi
 
 echo ""
-echo "安装完成!"
-echo ""
-echo "使用方法:"
-echo "  $SCRIPT_NAME \"用中文输出这个视频的文字脚本，无需时间戳\" \"https://www.youtube.com/watch?v=9hE5-98ZeCg\" "
+echo "==============================================="
+echo "             安装完成!"
+echo "==============================================="
 echo ""
 
 # Show next steps
 if [[ ":$PATH:" != *":$INSTALL_DIR:"* ]] || [ "$api_key_set" = true ]; then
-    echo "请运行以下命令使更改生效:"
+    echo "首次使用前，请先运行以下命令:"
+    echo ""
     if [[ ":$PATH:" != *":$INSTALL_DIR:"* ]]; then
-        echo "  $source_cmd"
+        echo "    $source_cmd"
     else
-        echo "  source $config_file  # 加载 API Key"
+        echo "    source $config_file"
     fi
     echo ""
-    echo "然后就可以直接运行: $SCRIPT_NAME"
+    echo "注意: 上述命令只需运行一次！"
+    echo ""
+    echo "==============================================="
+    echo "然后就可以使用以下命令:"
+    echo "  $SCRIPT_NAME \"用中文输出这个视频的文字脚本，无需时间戳\" \"https://www.youtube.com/watch?v=9hE5-98ZeCg\""
 else
-    echo "你现在可以直接运行: $SCRIPT_NAME"
+    echo "你现在可以直接使用:"
+    echo "  $SCRIPT_NAME \"用中文输出这个视频的文字脚本，无需时间戳\" \"https://www.youtube.com/watch?v=9hE5-98ZeCg\""
 fi
+echo ""
