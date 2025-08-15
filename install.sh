@@ -64,8 +64,23 @@ echo ""
 
 # Check if API key already exists
 if [ -z "$GEMINI_API_KEY" ]; then
-    read -p "请输入您的 Gemini API Key (留空跳过): " -s api_key
-    echo ""
+    # Check if we can read from terminal (not running via pipe)
+    if [ -t 0 ] && [ -t 1 ]; then
+        read -p "请输入您的 Gemini API Key (留空跳过): " -s api_key
+        echo ""
+    else
+        # When running via pipe (curl | bash), use /dev/tty if available
+        if [ -c /dev/tty ]; then
+            echo "请输入您的 Gemini API Key (留空跳过): "
+            read -s api_key </dev/tty
+            echo ""
+        else
+            # Fallback: skip API key setup when no terminal available
+            echo "检测到非交互模式，跳过 API Key 设置"
+            echo "请稍后运行 gemini.sh 时手动设置 API Key"
+            api_key=""
+        fi
+    fi
     
     if [ -n "$api_key" ]; then
         # Detect shell and save API key
