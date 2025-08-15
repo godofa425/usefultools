@@ -2,10 +2,17 @@
 
 一个简单易用的 Gemini API 调用脚本，支持视频内容分析和文本生成。
 
-## 一键安装
+## 安装方式
 
+### 方式1: 一键安装（推荐）
 ```bash
 curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.sh | bash
+```
+
+### 方式2: 交互式安装（支持API key设置）
+```bash
+curl -O https://raw.githubusercontent.com/godofa425/usefultools/main/install.sh
+chmod +x install.sh && ./install.sh
 ```
 
 ## 使用方法
