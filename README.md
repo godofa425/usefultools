@@ -49,6 +49,12 @@ curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/install.
 curl -fsSL https://raw.githubusercontent.com/godofa425/usefultools/main/gemini.sh | bash
 ```
 
+## 📞 联系方式
+
+如果你在使用过程中遇到问题或有任何建议，欢迎联系我：
+
+**X (Twitter)**: [@SGodofa425](https://x.com/SGodofa425)
+
 ---
 
 **注意**: 首次使用需要 Google Gemini API Key。免费额度足够个人使用。
